@@ -9,17 +9,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-            <provider
-                android:name="hird.nick.psynh1.recipebook.RecipeProvider"
-                android:authorities="hird.nick.psynh1.recipebook.RecipeProvider"
-                android:multiprocess="true"
-                android:exported="true"
-                />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ViewRecipeActivity" />
+        <activity android:name=".ModifyRecipeActivity"/>
+        <provider
+            android:authorities="hird.nick.psynh1.recipebook.RecipeProvider"
+            android:multiprocess="true"
+            android:exported="true"
+            android:name="hird.nick.psynh1.recipebook.RecipeProvider">
+        </provider>
     </application>
 
 </manifest>
