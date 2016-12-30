@@ -35,9 +35,6 @@ public class RecipeDBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(SQL_CREATE_TABLE);
-//        db.execSQL("INSERT INTO RECIPES ("+RECIPE_TITLE+", "+RECIPE_CONTENT+") VALUES ('Test 1', 'Test one filler text')");
-//        db.execSQL("INSERT INTO RECIPES ("+RECIPE_TITLE+", "+RECIPE_CONTENT+") VALUES ('Test 2', 'Test two filler text')");
-
         Log.d("DB Helper", "onCreate");
     }
 
@@ -47,6 +44,5 @@ public class RecipeDBHelper extends SQLiteOpenHelper {
         onCreate(db);
         Log.d("DB Helper", "onUpgrade");
     }
-
 
 }

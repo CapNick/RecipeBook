@@ -18,5 +18,4 @@ public class RecipeContract {
     public static final String CONTENT_TYPE_SINGLE = "vnd.android.cursor.item/RecipeProvider.data.text";
     public static final String CONTENT_TYPE_MULTIPLE = "vnd.android.cursor.dir/RecipeProvider.data.text";
 
-
 }

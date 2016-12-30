@@ -40,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
         queryContentProvider();
     }
 
+    /**
+     * Used to update the
+     **/
+
     public void queryContentProvider() {
 
         String[] projection = new String[] {
